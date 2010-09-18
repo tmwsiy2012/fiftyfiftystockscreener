@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="com.eddidunn.data1"/>
-	<classpathentry kind="src" path="com.eddiedunn.screen1"/>
-	<classpathentry kind="src" path="com.eddiedunn.test1"/>
-	<classpathentry kind="src" path="com.eddiedunn.util1"/>
+	<classpathentry kind="src" path="com.eddidunn.data"/>
+	<classpathentry kind="src" path="com.eddiedunn.screen"/>
+	<classpathentry kind="src" path="com.eddiedunn.test"/>
+	<classpathentry kind="src" path="com.eddiedunn.util"/>
+	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
 	<classpathentry kind="lib" path="jars/httpcomponents-core-4.0.1/lib/httpcore-4.0.1.jar"/>
 	<classpathentry kind="lib" path="jars/mail.jar"/>
