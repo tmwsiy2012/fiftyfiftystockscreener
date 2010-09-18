@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="com.eddidunn.data"/>
+	<classpathentry kind="src" path="src.com.eddidunn.data"/>
 	<classpathentry kind="src" path="com.eddiedunn.screen"/>
 	<classpathentry kind="src" path="com.eddiedunn.test"/>
 	<classpathentry kind="src" path="com.eddiedunn.util"/>
