@@ -73,7 +73,7 @@ public class UC {
 		    
 			
             Class.forName("com.mysql.jdbc.Driver").newInstance();
-            conn = DriverManager.getConnection(cURL, "tmwsiy", "password");
+            conn = DriverManager.getConnection(cURL, "screen", "password");
             Statement stmt = conn.createStatement();
             stmt.executeUpdate(q);         			
 		} catch (Exception e) {
@@ -121,7 +121,7 @@ public class UC {
 		    
 			
             Class.forName("com.mysql.jdbc.Driver").newInstance();
-            conn = DriverManager.getConnection(cURL, "tmwsiy", "password");
+            conn = DriverManager.getConnection(cURL, "screen", "password");
             Statement stmt = conn.createStatement();
             stmt.executeUpdate(q);        			
 		} catch (Exception e) {
@@ -139,7 +139,7 @@ public class UC {
 	    final String cURL = "jdbc:mysql://192.168.5.12:3306/screener";		
 		try {
 	        Class.forName("com.mysql.jdbc.Driver").newInstance();
-	        conn = DriverManager.getConnection(cURL, "tmwsiy", "password");		
+	        conn = DriverManager.getConnection(cURL, "screen", "password");		
 			Statement stmt = conn.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE,ResultSet.CONCUR_READ_ONLY);
 			String sql = 
 				"select m.marketName,m.marketid from gather_runs gr "+
@@ -177,7 +177,7 @@ public class UC {
 	    	    
 		try {
 	        Class.forName("com.mysql.jdbc.Driver").newInstance();
-	        conn = DriverManager.getConnection(cURL, "tmwsiy", "password");		
+	        conn = DriverManager.getConnection(cURL, "screen", "password");		
 			Statement stmt = conn.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE,ResultSet.CONCUR_READ_ONLY);
 			String sql = 
 				"select i.ticker from interesting i WHERE " + "i.gather_runid="+gatherRunID+" ORDER BY i.ticker;";
@@ -240,7 +240,7 @@ public class UC {
 	    output.append("\"Market Name\",\"Ticker\",\"Company Name\",\"Interactive Chart\",\"Date Pulled\"\n");	    
 		try {
 	        Class.forName("com.mysql.jdbc.Driver").newInstance();
-	        conn = DriverManager.getConnection(cURL, "tmwsiy", "password");		
+	        conn = DriverManager.getConnection(cURL, "screen", "password");		
 			Statement stmt = conn.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE,ResultSet.CONCUR_READ_ONLY);
 			String sql = 
 				"select m.marketName,i.ticker,t.companyName,i.dateObserved from interesting i " +
@@ -287,7 +287,7 @@ public class UC {
 	    output.append("\"Market Name\",\"Ticker\",\"Company Name\",\"Interactive Chart\",\"Date Pulled\"\n");	    
 		try {
 	        Class.forName("com.mysql.jdbc.Driver").newInstance();
-	        conn = DriverManager.getConnection(cURL, "tmwsiy", "password");		
+	        conn = DriverManager.getConnection(cURL, "screen", "password");		
 			Statement stmt = conn.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE,ResultSet.CONCUR_READ_ONLY);
 			String sql = 
 				"select m.marketName,i.ticker,t.companyName,i.dateObserved from interesting i " +
@@ -329,7 +329,7 @@ public class UC {
 	    final String cURL = "jdbc:mysql://192.168.5.12:3306/screener";
 		try {
 	        Class.forName("com.mysql.jdbc.Driver").newInstance();
-	        conn = DriverManager.getConnection(cURL, "tmwsiy", "password");		
+	        conn = DriverManager.getConnection(cURL, "screen", "password");		
 			Statement stmt = conn.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE,ResultSet.CONCUR_READ_ONLY);
 			String sql = "INSERT INTO gather_runs (marketid, " +
 					"time_started," +
@@ -374,7 +374,7 @@ public class UC {
 	    ArrayList<String> ar = new ArrayList<String>();
 		try {
 	        Class.forName("com.mysql.jdbc.Driver").newInstance();
-	        conn = DriverManager.getConnection(cURL, "tmwsiy", "password");		
+	        conn = DriverManager.getConnection(cURL, "screen", "password");		
 			Statement stmt = conn.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE,ResultSet.CONCUR_READ_ONLY);
 			ResultSet srs = null;
 			if( onlyWithData)
@@ -514,7 +514,7 @@ public class UC {
 			    
 				
 	            Class.forName("com.mysql.jdbc.Driver").newInstance();
-	            conn = DriverManager.getConnection(cURL, "tmwsiy", "password");
+	            conn = DriverManager.getConnection(cURL, "screen", "password");
 	            Statement stmt = conn.createStatement();
 	            stmt.executeUpdate(q);
 	            //rst = stmt.executeQuery(q);         			
